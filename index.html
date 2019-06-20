@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Submit Form Using AJAX and javascript</title>
+ 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<script src="get.js"></script>
+<script src="spring.js"></script>
+
+</head>
+<body>
+        <!-- <div class="jumbotron jumbotron-fluid">   -->
+        <div class="container">
+                <div class="jumbotron">  
+	<h2>Submit Form Using AJAX and javascript</h2>
+	<h6 id="success"></h6>
+	
+	<!-- Required Div Starts Here -->
+	
+		<form name="form" type=get id = "form">
+			<div class="form-group">
+				<label for="name" style="margin-left: 20px; margin-right: 5px">Name:</label>
+				<input type="text" class="form-control" id="name"
+					placeholder="Enter Name" />
+			</div>
+			<div class="form-group">
+				<label for="email" style="margin-left: 20px; margin-right: 5px">Email:</label>
+				<input type="email" class="form-control" id="email"
+				placeholder="sophie@example.com" onblur="validateEmail(this.value);"/>
+            </div>
+            </div>
+            <input type="button" class = "btn btn-primary btn-lg active" onclick="valid()" value = "Save">
+            <input type="button" class = "btn btn-info btn-lg active" onclick="fetch()" value = "ViewAllRecords">
+		</form>
+	</div>
+</body>
+</html>
